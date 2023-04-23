@@ -3,11 +3,14 @@
 #A = 3; B = 5 -> 243 (3⁵)
 #A = 2; B = 3 -> 8 
 
-def power(A, B):
-    if (B == 1):
-        return (A)
-    if (B != 1):
-        return (A * power(A, B - 1))
-A = int(input("Введите число: "))
-B = int(input("Введите его степень: "))
-print( 'A =',A, 'B =',B, "->", power(A, B))
+def degree(a, b):
+    if (b == 1):
+        return (a)
+    if (b != 1):
+        return (a * degree(a, b - 1))
+a = int(input("Введите число: "))
+b = int(input("Введите степень числа: "))
+print( 'a =',a, 'b =',b, "->", degree(a, b))
+
+
+
